@@ -1,10 +1,11 @@
 import React from 'react';
 import "./about.css";
 import AboutImg from "../../assets/aboutBW.jpg";
-import CV from "../../assets/Example-Cv.pdf";
+// import CV from "../../assets/VijayV.pdf";
 import Info from "./Info";
 
 const About = () => {
+    const CV = "https://clubofdevelopers.github.io/VijayV.pdf";
     return (
         <section className="about section" id="about">
             <h2 className="section__title">About Me</h2>
@@ -16,7 +17,7 @@ const About = () => {
                     <p className="about__description">
                         As a full stack developer, I specialize in creating applications that emphasize minimal design and user friendly UI/UX interfaces.
                     </p>
-                    <a download="" href={CV} className="button button--flex">
+                    <a download="" href={CV} target="_blank" className="button button--flex" rel="noreferrer">
                         Download CV
                         <svg
                             class="button__icon"
