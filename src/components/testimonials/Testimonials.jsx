@@ -9,8 +9,8 @@ import { Pagination } from 'swiper';
 const Testimonials = () => {
   return (
     <section className="testimonial container section">
-        <h2 className="section__title">Client Feedback</h2>
-        <span className="section__subtitle">Testimonial</span>
+        <h2 className="section__title">Most Proud of</h2>
+        <span className="section__subtitle">Achievements</span>
         <Swiper className="testimonial__container"
             loop={true}
             grabCursor={true}

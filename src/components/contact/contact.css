@@ -106,6 +106,14 @@
     resize: none;
 }
 
+.error {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+    padding-top: 64px;
+}
+
+
 /* BREAK POINTS */
 @media screen and (max-width: 992px) {
     .contact__container {

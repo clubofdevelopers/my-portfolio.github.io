@@ -6,19 +6,19 @@ export const Data = [
     {
         id: 1,
         image: Image1,
-        title: "Kris C.",
-        description: "Executed the concept with clarity and adaptability.",
+        title: 'Certification of honour',
+        description: 'By "Dainik Jagran" (News Paper)',
     },
     {
         id: 2,
         image: Image2,
-        title: "Mark S.",
-        description: "Provided creative insight and improvment to the project.",
+        title: "Chegg India (Online Tutor)",
+        description: "Helps the students all over the world solving their doubts and helping them easily to learning.",
     },
     {
         id: 3,
         image: Image3,
-        title: "Gemma B.",
-        description: "Fixed the glitch and made the site easier to use.",
+        title: "Hakerank",
+        description: "4 Star on Hakerank.",
     },
 ];
