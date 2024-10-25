@@ -13,7 +13,7 @@
 
 .services__icon {
     display: block;
-    font-size: 2rem;
+    font-size: 3.25rem;
     color: var(--title-color);
     margin-bottom: var(--mb-1);
 }
@@ -63,7 +63,7 @@
     width: 500px;
     position: relative;
     background-color: var(--container-color);
-    padding: 4.5rem 2.5rem 2.5rem;
+    padding: 1.5rem 2.5rem 2.5rem;
     border-radius: 1.5rem;
 }
 

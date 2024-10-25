@@ -80,6 +80,11 @@
     transform: translate(6px, -7px);
 }
 
+.project__modal-content{
+    overflow-y: auto;
+    height: -webkit-fill-available;;
+}
+
 /* BREAK POINTS */
 @media screen and (max-width: 992px) {
     .qualification__container {

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./qualification.css";
 import { HiOutlineAcademicCap, HiOutlineBriefcase, HiOutlineCalendar, HiOutlineClipboardList } from "react-icons/hi";
+import QualPopup from "./QualPopup";
+import { certificateData } from "./Data";
 
 const Qualification = () => {
     const [toggleState, setToggleState] = useState(1)
@@ -144,14 +146,7 @@ const Qualification = () => {
                     <div className={toggleState === 3 ? "qualification__content qualification__content-active"
                         : "qualification__content"}>
                         <div className="qualification__data">
-                            <div>
-                                <h3 className="qualification__title">Programming with Python</h3>
-                                <span className="qualification__subtitle">INTERNSHALA</span>
-                                <div className="qualification__calendar">
-                                    <HiOutlineCalendar className="qualification__calendar-icon" />
-                                    June 24, 2020
-                                </div>
-                            </div>
+                            <QualPopup item={certificateData[0]} key={certificateData[0].id} />
                             <div>
                                 <span className="qualification__rounder"></span>
                                 <span className="qualification__line"></span>
@@ -163,44 +158,23 @@ const Qualification = () => {
                                 <span className="qualification__rounder"></span>
                                 <span className="qualification__line"></span>
                             </div>
+                            <QualPopup item={certificateData[1]} key={certificateData[1].id} />
+                        </div>
+                        <div className="qualification__data">
+                            <QualPopup item={certificateData[2]} key={certificateData[2].id} />
                             <div>
-                                <h3 className="qualification__title">Programming for Everybody</h3>
-                                <span className="qualification__subtitle">COURSERA</span>
-                                <div className="qualification__calendar">
-                                    <HiOutlineCalendar className="qualification__calendar-icon" />
-                                    June 28, 2020
-                                </div>
+                                <span className="qualification__rounder"></span>
+                                <span className="qualification__line"></span>
                             </div>
                         </div>
                         <div className="qualification__data">
-                        <div>
-                            <h3 className="qualification__title">Python (Basics)</h3>
-                            <span className="qualification__subtitle">HAKERANK</span>
-                            <div className="qualification__calendar">
-                                <HiOutlineCalendar className="qualification__calendar-icon" />
-                                July 07, 2020
+                            <div></div>
+                            <div>
+                                <span className="qualification__rounder"></span>
+                                <span className="qualification__line"></span>
                             </div>
+                            <QualPopup item={certificateData[3]} key={certificateData[3].id} />
                         </div>
-                        <div>
-                            <span className="qualification__rounder"></span>
-                            <span className="qualification__line"></span>
-                        </div>
-                    </div>
-                    <div className="qualification__data">
-                        <div></div>
-                        <div>
-                            <span className="qualification__rounder"></span>
-                            <span className="qualification__line"></span>
-                        </div>
-                        <div>
-                            <h3 className="qualification__title">Coding Event</h3>
-                            <span className="qualification__subtitle">CODING NINZA</span>
-                            <div className="qualification__calendar">
-                                <HiOutlineCalendar className="qualification__calendar-icon" />
-                                Dec 1, 2020
-                            </div>
-                        </div>
-                    </div>
                     </div>
                 </div>
             </div>

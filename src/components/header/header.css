@@ -43,7 +43,7 @@
 .active-link, .nav__link:hover {
     /* color: var(--title-color-dark); */
     color: white;
-    background-color: black;
+    background-color: hsl(var(--hue), var(--sat), 20%);
     padding: 7px 19px;
     border-radius: 10px;
 }

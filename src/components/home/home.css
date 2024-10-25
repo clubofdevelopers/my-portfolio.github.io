@@ -16,7 +16,7 @@
 }
 
 .home__social-icon {
-    font-size: 1.25rem;
+    font-size: 2.25rem;
     color: var(--title-color);
 }
 
@@ -41,12 +41,13 @@
     padding-left: 5.4rem;
     font-weight: var(--font-normal);
     margin-bottom: var(--mb-1);
+    padding-top: 2px;
 }
 
 .home__subtitle::before {
     content: '';
     position: absolute;
-    width: 70px;
+    width: 56px;
     height: 1px;
     background-color: var(--text-color);
     left: 0;
