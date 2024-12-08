@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import '../services/services.css';
 import { HiOutlineArrowSmRight, HiOutlineCalendar, HiX } from "react-icons/hi";
+import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import { Typography } from '@mui/material';
 
 const QualPopup = ({ item }) => {
     const [dialogOpen, setDialogOpen] = useState(false); // Manage dialog open/close state
@@ -17,12 +20,13 @@ const QualPopup = ({ item }) => {
         <>
             <div className="project__card" key={item.id} onClick={handleClickEvent}>
                 <h3 className="project__title"> {item.title}</h3>
-                <div className="qualification__calendar">
-                    <HiOutlineCalendar className="qualification__calendar-icon" />
-                    {item.IssuedOn}
+                <WorkspacePremiumIcon sx={{ position: 'absolute', top: '10px', right: '10px' }} />
+                <div className="qualification__calendar" style={{ display: 'flex' }}>
+                    < CalendarMonthIcon sx={{ fontSize: '12px', marginTop: '2px' }} />
+                    <Typography>{item.IssuedOn}</Typography>
                 </div>
                 <a href={item.href} className="project__button" target="_blank" rel="noreferrer">
-                    Demo <HiOutlineArrowSmRight className="project__button-icon" />
+                    View <HiOutlineArrowSmRight className="project__button-icon" />
                 </a>
             </div>
 
@@ -59,14 +63,6 @@ const QualPopup = ({ item }) => {
                             </div>
                         )
                     }
-                    {/* <div className='project__modal-headings'>
-                        <h3>Skills Acquired :</h3>
-                        <ul>
-                            {item.SkillsAcquired.map((itms) => {
-                                return <li><b>{itms.title} :</b> {itms.technology}</li>
-                            })}
-                        </ul>
-                    </div> */}
                     {item?.link && (
                         <div className='project__modal-headings'>
                             <h3>Link :</h3>

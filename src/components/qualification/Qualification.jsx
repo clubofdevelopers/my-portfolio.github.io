@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import "./qualification.css";
 import { HiOutlineAcademicCap, HiOutlineBriefcase, HiOutlineCalendar, HiOutlineClipboardList } from "react-icons/hi";
 import QualPopup from "./QualPopup";
-import { certificateData } from "./Data";
+import Education from "./Education";
+import { certificateData, educationData } from "./Data";
 
 const Qualification = () => {
     const [toggleState, setToggleState] = useState(1)
@@ -39,14 +40,7 @@ const Qualification = () => {
                     <div className={toggleState === 1 ? "qualification__content qualification__content-active"
                         : "qualification__content"}>
                         <div className="qualification__data">
-                            <div>
-                                <h3 className="qualification__title">Senior Secondary</h3>
-                                <span className="qualification__subtitle">Christian Inter College, Farrukhabad</span>
-                                <div className="qualification__calendar">
-                                    <HiOutlineCalendar className="qualification__calendar-icon" />
-                                    2013-2015
-                                </div>
-                            </div>
+                            <Education item={educationData[0]} key={educationData[0].id} />
                             <div>
                                 <span className="qualification__rounder"></span>
                                 <span className="qualification__line"></span>
@@ -58,24 +52,10 @@ const Qualification = () => {
                                 <span className="qualification__rounder"></span>
                                 <span className="qualification__line"></span>
                             </div>
-                            <div>
-                                <h3 className="qualification__title">Diploma</h3>
-                                <span className="qualification__subtitle">Govt. Polytechnic Mainpuri</span>
-                                <div className="qualification__calendar">
-                                    <HiOutlineCalendar className="qualification__calendar-icon" />
-                                    2015-2018
-                                </div>
-                            </div>
+                            <Education item={educationData[1]} key={educationData[1].id} />
                         </div>
                         <div className="qualification__data">
-                            <div>
-                                <h3 className="qualification__title">Bachelor of Techology</h3>
-                                <span className="qualification__subtitle">Bundelkhand Institute of Engineering & Technology, Jhansi</span>
-                                <div className="qualification__calendar">
-                                    <HiOutlineCalendar className="qualification__calendar-icon" />
-                                    2018-2021
-                                </div>
-                            </div>
+                            <Education item={educationData[2]} key={educationData[2].id} />
                             <div>
                                 <span className="qualification__rounder"></span>
                                 <span className="qualification__line"></span>
