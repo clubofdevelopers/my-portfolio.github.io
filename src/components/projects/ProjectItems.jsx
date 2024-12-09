@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../services/services.css';
 import { HiOutlineArrowSmRight, HiOutlineCheckCircle, HiX } from "react-icons/hi";
+import DashboardIcon from '@mui/icons-material/Dashboard';
 
 const ProjectItems = ({ item }) => {
     const [dialogOpen, setDialogOpen] = useState(false); // Manage dialog open/close state
@@ -17,9 +18,9 @@ const ProjectItems = ({ item }) => {
         <>
             <div className="project__card" key={item.id} onClick={handleClickEvent}>
                 <img className="project__img" src={item.image} alt="" />
-                <h3 className="project__title">{item.title}</h3>
+                <h3 className="project__title"><DashboardIcon sx={{ fontSize: '1.2rem' }} /><span>{item.title}</span></h3>
                 <a href={item.href} className="project__button" target="_blank" rel="noreferrer">
-                    Demo <HiOutlineArrowSmRight className="project__button-icon" />
+                    Detail <HiOutlineArrowSmRight className="project__button-icon" />
                 </a>
             </div>
 

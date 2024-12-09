@@ -209,3 +209,18 @@ export const educationData = [
         duration: "2018-2021"
     },
 ];
+
+export const experienceData = [
+    {
+        id: 1,
+        title: "Product Engineer (.Net)",
+        subTitle: "Smart Energy Water (SEW.AI)",
+        duration: "Nov 2023-Ongoing"
+    },
+    {
+        id: 2,
+        title: ".Net Developer",
+        subTitle: "VitSoft Solutions Pvt. Ltd",
+        duration: "2021-2023"
+    }
+];

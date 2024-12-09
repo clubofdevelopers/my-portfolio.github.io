@@ -21,9 +21,9 @@ const QualPopup = ({ item }) => {
             <div className="project__card" key={item.id} onClick={handleClickEvent}>
                 <h3 className="project__title"> {item.title}</h3>
                 <WorkspacePremiumIcon sx={{ position: 'absolute', top: '10px', right: '10px' }} />
-                <div className="qualification__calendar" style={{ display: 'flex' }}>
-                    < CalendarMonthIcon sx={{ fontSize: '12px', marginTop: '2px' }} />
-                    <Typography>{item.IssuedOn}</Typography>
+                <div className="qualification__calendar" style={{ display: "flex", gap: "2px" }}>
+                    <CalendarMonthIcon sx={{ fontSize: '12px' }} />
+                    <span>{item.IssuedOn}</span>
                 </div>
                 <a href={item.href} className="project__button" target="_blank" rel="noreferrer">
                     View <HiOutlineArrowSmRight className="project__button-icon" />
