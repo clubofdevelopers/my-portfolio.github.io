@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../services/services.css';
 import { HiOutlineArrowSmRight, HiOutlineCheckCircle, HiX } from "react-icons/hi";
 import DashboardIcon from '@mui/icons-material/Dashboard';
+import ViewListIcon from '@mui/icons-material/ViewList';
 
 const ProjectItems = ({ item }) => {
     const [dialogOpen, setDialogOpen] = useState(false); // Manage dialog open/close state
@@ -30,7 +31,7 @@ const ProjectItems = ({ item }) => {
                     <HiX onClick={closeDialog} className="services__modal-close" />
                     <h2 className="project__modal-title">{item.title}</h2>
                     <div className='project__modal-headings'>
-                        <h3>Overview :</h3>
+                        <h3><span>Overview :</span> <ViewListIcon style={{ margin: '-5px', marginLeft: '2px' }} /></h3>
                         <p>{item.overview}</p>
                     </div>
                     {
@@ -86,7 +87,7 @@ const ProjectItems = ({ item }) => {
                         </li>
                     </ul> */}
                 </div>
-            </div>
+            </div >
         </>
     );
 };

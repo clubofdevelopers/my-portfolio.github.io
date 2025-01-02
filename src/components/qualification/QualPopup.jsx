@@ -4,6 +4,8 @@ import { HiOutlineArrowSmRight, HiOutlineCalendar, HiX } from "react-icons/hi";
 import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import { Typography } from '@mui/material';
+import ViewListIcon from '@mui/icons-material/ViewList';
+
 
 const QualPopup = ({ item }) => {
     const [dialogOpen, setDialogOpen] = useState(false); // Manage dialog open/close state
@@ -36,7 +38,7 @@ const QualPopup = ({ item }) => {
                     <HiX onClick={closeDialog} className="services__modal-close" />
                     <h2 className="project__modal-title">{item.title}</h2>
                     <div className='project__modal-headings'>
-                        <h3>Overview :</h3>
+                        <h3>Overview : <ViewListIcon /></h3>
                         <p>{item.overview}</p>
                     </div>
                     {

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './services.css';
 import { HiOutlineClipboardList, HiOutlineArrowSmRight, HiOutlineCheckCircle, HiX } from 'react-icons/hi';
+import Testimonials from '../testimonials/Testimonials';
 
 const Services = () => {
     const [toggleState, setToggleState] = useState(0);
@@ -135,7 +136,7 @@ const Services = () => {
                     </div>
                 </div>
             </div>
-
+            <Testimonials />
         </section>
     );
 }

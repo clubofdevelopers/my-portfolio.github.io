@@ -80,9 +80,10 @@
     transform: translate(6px, -7px);
 }
 
-.project__modal-content{
+.project__modal-content {
     overflow-y: auto;
-    height: -webkit-fill-available;;
+    height: -webkit-fill-available;
+    ;
 }
 
 /* BREAK POINTS */
@@ -114,4 +115,22 @@
     .qualification__data {
         gap: 0.5rem;
     }
+}
+
+.MuiTypography-root.MuiTypography-body1.MuiTimelineContent-root.MuiTimelineContent-positionAlternate.css-l73f8l-MuiTypography-root-MuiTimelineContent-root>span {
+    color: var(--title-color);
+    font-family: var(--body-font);
+}
+
+.MuiTypography-root.MuiTypography-body1.MuiTimelineContent-root.MuiTimelineContent-positionAlternate.css-l73f8l-MuiTypography-root-MuiTimelineContent-root>p {
+    font-family: var(--body-font);
+}
+
+.MuiTypography-root.MuiTypography-body2.MuiTimelineOppositeContent-root.MuiTimelineOppositeContent-positionAlternate.css-6m14tr-MuiTypography-root-MuiTimelineOppositeContent-root {
+    font-family: var(--body-font);
+}
+.css-6m14tr-MuiTypography-root-MuiTimelineOppositeContent-root,
+.css-2it631-MuiTypography-root-MuiTimelineOppositeContent-root
+{
+    font-family: var(--body-font);
 }

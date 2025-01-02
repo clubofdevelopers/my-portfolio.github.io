@@ -1,4 +1,5 @@
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/header/Header';
 import Home from './components/home/Home';
 import About from './components/about/About';
@@ -13,21 +14,21 @@ import Portfolio from './components/projects/Portfolio';
 
 const App = () => {
   return (
-    <>
-      <Header/>
-      <main className='main'>
-        <Home />
-        <About />
-        <Skills />
-        <Services />
-        <Qualification />
-        <Portfolio />
-        <Testimonials />
-        <Contact />
-      </main>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/qualification" element={<Qualification />} />
+        <Route path="/projects" element={<Portfolio />} />
+        <Route path="/testimonials" element={<Testimonials />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <Header />
       <Footer />
       <ScrollUp />
-    </>
+    </Router>
   );
 }
 

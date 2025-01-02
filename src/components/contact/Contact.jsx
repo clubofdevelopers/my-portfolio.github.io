@@ -1,14 +1,15 @@
-import React, {useState, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import "./contact.css";
 import { HiOutlineMail, HiOutlineArrowSmRight } from "react-icons/hi"
 import emailjs from '@emailjs/browser';
 
+
 // const Contact = () => {
 //     const form = useRef();
-    
+
 //     const sendEmail = (e) => {
 //         e.preventDefault();
-    
+
 //         emailjs.sendForm('service_vsrk9ij', 'template_of366im', form.current, 'ejfO3coGjSy3F7CRD')
 //         .then(() => {
 //             alert('Message Sent Successfully ! ✅');
@@ -17,7 +18,7 @@ import emailjs from '@emailjs/browser';
 //           });
 //         e.target.reset();
 //     };
-  
+
 //     return (
 //     <section className="contact section" id="contact">
 //         <h2 className="section__title">Let's Connect</h2>
@@ -26,14 +27,14 @@ import emailjs from '@emailjs/browser';
 //         <div className="contact__container container grid">
 //             <div className="contact__content">
 //                 <h3 className="contact__title">Talk to me</h3>
-                
+
 //                 <div className="contact__info">
 //                     <div className="contact__card">
 //                         <HiOutlineMail className="contact__card-icon" />
-                        
+
 //                         <h3 className="contact__card-title">Email</h3>
 //                         <span className="contact__card-data">vskumar12346869@gmail.com</span>
-                        
+
 //                         <a href="mailto:vskumar12346869@gmail.com" className="contact__button">
 //                             Write Me{" "} 
 //                             <HiOutlineArrowSmRight className="contact__button-icon" />
@@ -96,12 +97,12 @@ const Contact = () => {
         project: ""
     });
     const [formErrors, setFormErrors] = useState({});
-    
+
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
     };
-    
+
     const validateForm = () => {
         const errors = {};
         if (!formData.name.trim()) {
@@ -117,10 +118,10 @@ const Contact = () => {
         }
         return errors;
     };
-    
+
     const sendEmail = (e) => {
         e.preventDefault();
-        
+
         const errors = validateForm();
         if (Object.keys(errors).length > 0) {
             setFormErrors(errors);
@@ -128,19 +129,19 @@ const Contact = () => {
         }
 
         emailjs.sendForm('service_vsrk9ij', 'template_of366im', form.current, 'ejfO3coGjSy3F7CRD')
-        .then(() => {
-            alert('Message Sent Successfully! ✅');
-            setFormData({
-                name: "",
-                email: "",
-                project: ""
+            .then(() => {
+                alert('Message Sent Successfully! ✅');
+                setFormData({
+                    name: "",
+                    email: "",
+                    project: ""
+                });
+                setFormErrors({});
+            }, (err) => {
+                alert(JSON.stringify(err));
             });
-            setFormErrors({});
-        }, (err) => {
-            alert(JSON.stringify(err));
-        });
     };
-  
+
     return (
         <section className="contact section" id="contact">
             <h2 className="section__title">Let's Connect</h2>
@@ -203,7 +204,7 @@ const Contact = () => {
                                 value={formData.project}
                                 onChange={handleChange}
                             />
-                            {formErrors.project && <p className="error" style={{paddingTop:'176px'}}>{formErrors.project}</p>}
+                            {formErrors.project && <p className="error" style={{ paddingTop: '176px' }}>{formErrors.project}</p>}
                         </div>
 
                         <button href="#contact" className="button button--flex">

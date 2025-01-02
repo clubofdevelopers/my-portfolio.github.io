@@ -2,9 +2,22 @@ import React, { useState } from "react";
 import "./qualification.css";
 import { HiOutlineAcademicCap, HiOutlineBriefcase, HiOutlineCalendar, HiOutlineClipboardList } from "react-icons/hi";
 import QualPopup from "./QualPopup";
-import Education from "./Education";
+import Education, { TimeLineComponent } from "./Education";
 import Experience from "./Experience";
 import { certificateData, educationData, experienceData } from "./Data";
+
+import Timeline from '@mui/lab/Timeline';
+import TimelineItem from '@mui/lab/TimelineItem';
+import TimelineSeparator from '@mui/lab/TimelineSeparator';
+import TimelineConnector from '@mui/lab/TimelineConnector';
+import TimelineContent from '@mui/lab/TimelineContent';
+import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
+import TimelineDot from '@mui/lab/TimelineDot';
+import FastfoodIcon from '@mui/icons-material/Fastfood';
+import LaptopMacIcon from '@mui/icons-material/LaptopMac';
+import HotelIcon from '@mui/icons-material/Hotel';
+import RepeatIcon from '@mui/icons-material/Repeat';
+import Typography from '@mui/material/Typography';
 
 const Qualification = () => {
     const [toggleState, setToggleState] = useState(1)
@@ -37,10 +50,10 @@ const Qualification = () => {
                     </div>
                 </div>
 
-                <div className="qualification__sections">
+                <div className={toggleState !== 1 ? "qualification__sections" : undefined}>
                     <div className={toggleState === 1 ? "qualification__content qualification__content-active"
                         : "qualification__content"}>
-                        <div className="qualification__data">
+                        {/* <div className="qualification__data">
                             <Education item={educationData[0]} key={educationData[0].id} />
                             <div>
                                 <span className="qualification__rounder"></span>
@@ -61,7 +74,9 @@ const Qualification = () => {
                                 <span className="qualification__rounder"></span>
                                 <span className="qualification__line"></span>
                             </div>
-                        </div>
+                        </div> */}
+
+                        <TimeLineComponent item={educationData} />
                     </div>
                     <div className={toggleState === 2 ? "qualification__content qualification__content-active"
                         : "qualification__content"}>
