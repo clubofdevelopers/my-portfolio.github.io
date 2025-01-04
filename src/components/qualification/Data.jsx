@@ -2,6 +2,9 @@ import Hakerank from "../../assets/Hakerank.png";
 import Python from "../../assets/Python.jpg";
 import CodingNinza from "../../assets/CodingNinza.jpg";
 import Coursera from "../../assets/Coursera.jpg";
+import SchoolIcon from '@mui/icons-material/SchoolRounded';
+import AssignmentIcon from '@mui/icons-material/AssignmentRounded';
+import EngineeringIcon from '@mui/icons-material/EngineeringRounded';
 
 export const certificateData = [
     {
@@ -192,21 +195,35 @@ export const certificateData = [
 export const educationData = [
     {
         id: 1,
-        title: "Senior Secondary",
-        subTitle: "Christian Inter College, Farrukhabad",
-        duration: "2013-2015"
+        title: "Higher Secondary",
+        subTitle: "A J Inter College, Farrukhabad",
+        duration: "2012-2013",
+        Icon: SchoolIcon,
+        timeLineColor: undefined
     },
     {
         id: 2,
-        title: "Diploma",
-        subTitle: "Govt. Polytechnic Mainpuri",
-        duration: "2015-2018"
+        title: "Senior Secondary",
+        subTitle: "Christian Inter College, Farrukhabad",
+        duration: "2013-2015",
+        Icon: SchoolIcon,
+        timeLineColor: "primary"
     },
     {
         id: 3,
+        title: "Diploma",
+        subTitle: "Govt. Polytechnic Mainpuri",
+        duration: "2015-2018",
+        Icon: AssignmentIcon,
+        timeLineColor: "success"
+    },
+    {
+        id: 4,
         title: "Bachelor of Techology",
         subTitle: "Bundelkhand Institute of Engineering & Technology, Jhansi ( BIET )",
-        duration: "2018-2021"
+        duration: "2018-2021",
+        Icon: EngineeringIcon,
+        timeLineColor: "secondary"
     },
 ];
 

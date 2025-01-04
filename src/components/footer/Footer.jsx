@@ -12,7 +12,7 @@ const Footer = () => {
         <footer className="footer">
             <div className="footer__container container">
                 <h1 className="footer__title">Club of Developers</h1>
-                <ul className="footer__list">
+                {/* <ul className="footer__list">
                     <li>
                         <Link to={'/about'} className="footer__link" onClick={() => dispatch(setActiveNav('#about'))}>About</Link>
                     </li>
@@ -22,7 +22,7 @@ const Footer = () => {
                     <li>
                         <Link to={'/services'} className="footer__link" onClick={() => dispatch(setActiveNav('#services'))}>Most Proud</Link>
                     </li>
-                </ul>
+                </ul> */}
                 <div className="footer__social">
                     <a href="https://www.linkedin.com/in/vijay-sharma-227b5a124" className="home__social-icon linkedin" target="_blank" rel="noreferrer" >
                         <FiLinkedin />
