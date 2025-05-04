@@ -12,6 +12,7 @@ import BookRoundedIcon from '@mui/icons-material/BookRounded';
 import PermPhoneMsgRoundedIcon from '@mui/icons-material/PermPhoneMsgRounded';
 import { useSelector, useDispatch } from 'react-redux';
 import { setActiveNav } from '../../redux/actions';
+import logo from '../../assets/logo.png';
 
 const Header = () => {
     window.addEventListener("scroll", function () {
@@ -29,9 +30,22 @@ const Header = () => {
     return (
         <header className="header">
             <nav className="nav container">
-                <Link to={'/'} className="nav__logo" style={{ fontSize: "x-large", letterSpacing: "1px" }} onClick={() => dispatch(setActiveNav('#home'))}>
-                    <h1>Portfolio</h1>
+                <Link
+                    to="/"
+                    className="nav__logo"
+                    style={{ fontSize: "x-large", letterSpacing: "1px", display: "flex", alignItems: "center", gap: "8px" }}
+                    onClick={() => dispatch(setActiveNav('#home'))}
+                >
+                    <img
+                        src={logo}
+                        alt="Club Of Dev"
+                        width="50"
+                        height="50"
+                        style={{ borderRadius: "50%" }}
+                    />
+                    <h1 style={{ margin: 0 }}>Portfolio</h1>
                 </Link>
+
                 <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
                     <ul className="nav__list grid">
                         <li className="nav__item">

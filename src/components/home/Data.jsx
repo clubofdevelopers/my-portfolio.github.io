@@ -63,7 +63,7 @@ const Data = (props) => {
                 Developer + Designer
             </h3>
             <p className="home__description">
-                Full-Stack developer dedicated to develop & design creative solutions.
+            🚀 Product Engineer <b>@Smart Energy Water (SEW.AI)</b> | Full-Stack developer | 4⭐ on HakerRank |🎖️ <b>React</b> |⚡ <b>.Net Core</b> | Passionate about Solving Complex Problems !
             </p>
 
             <Link to={'/contact'} className="button button--flex" onClick={() => dispatch(setActiveNav('#contact'))}
