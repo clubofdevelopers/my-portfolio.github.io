@@ -9,11 +9,11 @@ export const projectsData = [
         category: "B",
         image: Project2,
         title: "Town of Apex Utility",
-        overview: "The Town of Apex Utility v11 project is focused on providing an enhanced, user-friendly platform for managing water utility services. The system allows residents to efficiently manage their water usage, pay bills online, and access critical service-related information.",
+        overview: "The Town of Apex Utility v11 project is focused on providing an enhanced, user-friendly platform for managing electric & water utilities services. The system allows residents & commercial users to efficiently manage their electric & water usage, pay bills online, and access critical service-related information.",
         technologies: [
             {
                 title: "Frontend",
-                technology: "React, JavaScript, HTML, CSS"
+                technology: "React, JavaScript, HTML, CSS, Material UI"
             },
             {
                 title: "Backend",
@@ -31,30 +31,30 @@ export const projectsData = [
         keyFeatures: [
             {
                 featureTitle: "Online Bill Payment",
-                description: "Residents can securely pay their water utility bills online with multiple payment options."
+                description: "Residents can securely pay their electric & water utility bills online with multiple payment options."
             },
             {
                 featureTitle: "Billing History",
                 description: "Users can view detailed billing history and track their utility expenses over time."
             },
             {
-                featureTitle: "Water Usage Tracking",
-                description: "Provides detailed analytics on water consumption to help users monitor and reduce their usage."
+                featureTitle: "Electric & Water Usage Tracking",
+                description: "Provides detailed analytics on electric & water consumption to help users monitor and reduce their usage."
             },
             {
                 featureTitle: "Service Requests",
-                description: "Users can easily raise service requests for water-related issues, such as repairs or maintenance."
+                description: "Users can easily raise service requests for electric & water related issues, such as repairs or maintenance."
             },
             {
                 featureTitle: "Notification System",
-                description: "Sends automated notifications and reminders about bill payments and service interruptions."
+                description: "Sends automated notifications and reminders about bill payments, usage and outage service interruptions."
             },
             {
                 featureTitle: "Account Management",
                 description: "Allows users to update account details, view billing history, and manage their services through a simple dashboard."
             }
         ],
-        rolesAndResponsibilities: "I am involved in both frontend and backend development, focusing on user interface improvements, API integration, and ensuring smooth data flow between services. I also work on optimizing performance and enhancing the overall user experience. Additionally, I integrated VaultService for Very Good Security (VGS) to securely handle users' personal identification information, and implemented Google Map integration for Utility Connect, Disconnect, and Leak Adjustment services. I have also developed a new Service Engagement Form to streamline customer interactions.",
+        rolesAndResponsibilities: "I am involved in both frontend and backend development, focusing on user interface improvements, API integration, and ensuring smooth data flow between services. I also work on optimizing performance and enhancing the overall user experience. Additionally, I integrated VaultService for Very Good Security (VGS) to securely handle users' personal identification information, Payment Integration for Utility Deposit residential & commercial users and implemented Google Map integration for Utility Connect, Disconnect, and Leak Adjustment services. I have also developed new Service Engagement Forms & integrate Ticket Management API to streamline customer interactions.",
         impact: "The V11 version has made the system more robust and user-friendly, improving resident satisfaction by making utility management more accessible and convenient. It has also streamlined the town’s utility billing process."
     },
     {

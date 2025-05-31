@@ -11,24 +11,28 @@ import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import ScrollUp from './components/scrollup/ScrollUp';
 import Portfolio from './components/projects/Portfolio';
+import ParticleBackground from './ParticleBackground';
 
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/qualification" element={<Qualification />} />
-        <Route path="/projects" element={<Portfolio />} />
-        <Route path="/testimonials" element={<Testimonials />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-      <Header />
-      <Footer />
-      <ScrollUp />
-    </Router>
+    <>
+      <ParticleBackground />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/qualification" element={<Qualification />} />
+          <Route path="/projects" element={<Portfolio />} />
+          <Route path="/testimonials" element={<Testimonials />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <Header />
+        <Footer />
+        <ScrollUp />
+      </Router>
+    </>
   );
 }
 
