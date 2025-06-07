@@ -23,7 +23,7 @@ const ParticleBackground = () => {
                     },
                     color: {
                         // value: "#1b1e34"
-                        value: "#1b1e34"
+                        value: "#75cbcc"
                     },
                     shape: {
                         type: "polygon",
@@ -41,7 +41,7 @@ const ParticleBackground = () => {
                         }
                     },
                     opacity: {
-                        value: 0.02,
+                        value: 0.4,
                         random: true,
                         anim: {
                             enable: false,

@@ -37,7 +37,8 @@
 
 .skills svg {
     font-size: 1rem;
-    color: var(--title-color);
+    /* color: var(--title-color); */
+    color: hsl(0deg 0% 20% / 78%);
 }
 
 .skills__name {
@@ -52,10 +53,10 @@
 
 /* BREAK POINTS */
 @media screen and (max-width: 992px) {
-   .skills__container {
-    grid-template-columns: max-content;
-    row-gap: 2rem;
-   }
+    .skills__container {
+        grid-template-columns: max-content;
+        row-gap: 2rem;
+    }
 }
 
 @media screen and (max-width: 576px) {
