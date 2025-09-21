@@ -32,7 +32,8 @@
     margin-bottom: var(--mb-0-25);
 }
 
-.contact__card-title, .contact__card-data {
+.contact__card-title,
+.contact__card-data {
     font-size: var(--small-font-size);
 }
 
@@ -107,10 +108,11 @@
 }
 
 .error {
+    position: absolute;
     color: red;
     font-size: 0.875rem;
     margin-top: 0.5rem;
-    padding-top: 64px;
+    padding-top: 45px;
 }
 
 
@@ -147,5 +149,4 @@
     }
 }
 
-@media screen and (max-width: 350px) {
-}
+@media screen and (max-width: 350px) {}

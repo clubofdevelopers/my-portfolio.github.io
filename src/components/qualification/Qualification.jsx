@@ -45,13 +45,16 @@ const Qualification = () => {
                         <Timeline position="alternate">
                             {educationData.map(education => {
                                 return (
-                                    <CustomTimeLine
-                                        duration={education.duration}
-                                        title={education.title}
-                                        subTitle={education.subTitle}
-                                        Icon={education.Icon}
-                                        timeLineColor={education.timeLineColor}
-                                    />
+                                    <>
+                                        <CustomTimeLine
+                                            id={education.id}
+                                            duration={education.duration}
+                                            title={education.title}
+                                            subTitle={education.subTitle}
+                                            Icon={education.Icon}
+                                            timeLineColor={education.timeLineColor}
+                                        />
+                                    </>
                                 )
                             })}
                         </Timeline>

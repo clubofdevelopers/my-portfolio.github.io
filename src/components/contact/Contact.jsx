@@ -204,7 +204,7 @@ const Contact = () => {
                                 value={formData.project}
                                 onChange={handleChange}
                             />
-                            {formErrors.project && <p className="error" style={{ paddingTop: '176px' }}>{formErrors.project}</p>}
+                            {formErrors.project && <p className="error" style={{ paddingTop: '130px' }}>{formErrors.project}</p>}
                         </div>
 
                         <button href="#contact" className="button button--flex">

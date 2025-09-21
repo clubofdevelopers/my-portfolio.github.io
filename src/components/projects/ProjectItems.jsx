@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
 import '../services/services.css';
-import { HiOutlineArrowSmRight, HiOutlineCheckCircle, HiX } from "react-icons/hi";
+import { HiOutlineArrowSmRight, HiX } from "react-icons/hi";
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import ViewListIcon from '@mui/icons-material/ViewList';
+import ConstructionIcon from '@mui/icons-material/Construction';
+import KeyboardCommandKeyIcon from '@mui/icons-material/KeyboardCommandKey';
+import EngineeringIcon from '@mui/icons-material/Engineering';
+import InsightsIcon from '@mui/icons-material/Insights';
 
 const ProjectItems = ({ item }) => {
     const [dialogOpen, setDialogOpen] = useState(false); // Manage dialog open/close state
@@ -43,7 +47,7 @@ const ProjectItems = ({ item }) => {
                         )
                     }
                     <div className='project__modal-headings'>
-                        <h3>Technologies Used :</h3>
+                        <h3><span>Technologies Used :</span> <ConstructionIcon style={{ margin: '-5px', marginLeft: '2px' }} /></h3>
                         <ul>
                             {item.technologies.map((itms) => {
                                 return <li><b>{itms.title} :</b> {itms.technology}</li>
@@ -51,7 +55,7 @@ const ProjectItems = ({ item }) => {
                         </ul>
                     </div>
                     <div className='project__modal-headings'>
-                        <h3>Key Features :</h3>
+                        <h3><span>Key Features :</span> <KeyboardCommandKeyIcon style={{ margin: '-5px', marginLeft: '2px' }} /></h3>
                         <ul>
                             {item.keyFeatures.map((itm) => {
                                 return <li><b>{itm.featureTitle} :</b> {itm.description}</li>
@@ -59,11 +63,11 @@ const ProjectItems = ({ item }) => {
                         </ul>
                     </div>
                     <div className='project__modal-headings'>
-                        <h3>Role & Responsibilities :</h3>
+                        <h3><span>Role & Responsibilities :</span> <EngineeringIcon style={{ margin: '-5px', marginLeft: '2px' }} /></h3>
                         <p>{item.rolesAndResponsibilities}</p>
                     </div>
                     <div className='project__modal-headings'>
-                        <h3>Impact :</h3>
+                        <h3><span>Impact :</span> <InsightsIcon style={{ margin: '-5px', marginLeft: '2px' }} /></h3>
                         <p>{item.impact}</p>
                     </div>
                     {/* <ul className="services__modal-services grid">

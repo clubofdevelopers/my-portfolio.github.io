@@ -241,3 +241,87 @@ export const experienceData = [
         duration: "2021-2023"
     }
 ];
+
+export const educationPopUpData = [
+    {
+        id: 1,
+        title: "Higher Secondary",
+        subTitle: "A J Inter College, Farrukhabad",
+        duration: "2012-2013",
+        Icon: SchoolIcon,
+        timeLineColor: undefined,
+        location: "Awajpur, Farrukhabad",
+        specialization: "Maths",
+        modeOfStudy: "Full Time",
+        skills: "",
+        certificates: "",
+        internshipsOrTraining: "",
+        images: [
+            "https://t4.ftcdn.net/jpg/06/29/43/71/240_F_629437143_neDWI3pxQhSY7nixBWr50uxWyI9EF1sm.jpg",
+        ]
+    },
+    {
+        id: 2,
+        title: "Senior Secondary",
+        subTitle: "Christian Inter College, Farrukhabad",
+        duration: "2013-2015",
+        Icon: SchoolIcon,
+        timeLineColor: "primary",
+        location: "Bardhpur, Farrukhabad",
+        specialization: "Physics, Chemistry & Maths",
+        modeOfStudy: "Full Time",
+        skills: "",
+        certificates: "",
+        internshipsOrTraining: "Community Developement Through Polytechnic",
+        images: [
+            "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrcnk3J0MKTi627pjZi9LO2FatFVQjlymlfb5B1zHdzlGhhkDykq90BGg4E-5PvEb6IF0er6N8tiXKAPKYf2nkC48gSoM6568-pkUJSSAaBv0RcyMIIZcq50OaBukWlTsyC8g=s1360-w1360-h1020-rw",
+            "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqsybGkEWodqJ48t2XGw3ABVGtxpL1mOY9s1qd41IY3IYaj9XRtLoh_xhXWM1UaKQHPKEG-iaXTxp8xrdWJePO-N0gaKN_QCgMfoaWlfsuid2rjTUZRSekk28Anrv-pshBhYWmI9g=s1360-w1360-h1020-rw",
+            "https://lh3.googleusercontent.com/gps-cs-s/AC9h4no70R4X1Gu4qmJIBJdbN3Lija9LMW60QemQON8gfOGb_v934A8J9J1fhqo15gL3VidFHkNjbx0vdyw3aRBnRYYsrcVmGXEd_n73qIiZT6PMoB0zklHOtc1NaUijMGTlVlhRtKpM5w=s1360-w1360-h1020-rw",
+            "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npHN1uLMHRLCpdV4Swt8u32JwrAvoBocvHvBmnstR4Jv62WAxrM4LbxZKDR7AZVleept5Pq0ihu8xQ2HCXSIhzplwJ6bupmCMJD4mHaVdEZeIP1q6XINF32dkb6jt2k52-HUQDrBQ=s1360-w1360-h1020-rw",
+            "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqs1gCpSpZmwYvu-yTn8jj_uyFN3RVFhLJTr_W0W92TgdLjxIltZDUA2XqQgajlnUpWTpDw13Rx_JCt4PozTfFk4IpobRiZcmWqWM1fDaTgFhY9RPQozTtsQkgO561wZoBiKxLq=s1360-w1360-h1020-rw"
+        ]
+    },
+    {
+        id: 3,
+        title: "Diploma",
+        subTitle: "Govt. Polytechnic Mainpuri",
+        duration: "2015-2018",
+        Icon: AssignmentIcon,
+        timeLineColor: "success",
+        location: "Mainpuri, Uttar Pradesh",
+        specialization: "Electronics Engineering Advance Microprocessor & Interface",
+        modeOfStudy: "Full Time",
+        skills: "",
+        certificates: "",
+        internshipsOrTraining: "Vocational Training, U.P. Power Transmission Corporation Limited, Fatehgarh",
+        images: [
+            "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npYVMtVuKbgxsJW0L6cFqVnCc4CvczPAoEfJ8wrr31vNgrN11u8IdImpyBkzDLCILfEvzgiSChBSF3TH14TGjDER17bEdt2iSa0ktEuyJYTPLcveT8A4kwai3Xh74P_cSSNsLae9A=s1360-w1360-h1020-rw",
+            "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqBAmRBDalMmS-cWyKrysv8XKE0IBfgX7BOql3azNi396TkS-KfTQrIZ111-XhAVkkswbcCX76RJFsEUiXuCA3zrg8dp8wBdagzNXt6oDIuBIKbEf3XHxG5JKKBTYlX92hOWT7YUQ=s1360-w1360-h1020-rw",
+            "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npUDBA9KAJGp1u2jAByvwp5qhuz8hNOOMbYO6LiqgSQWVCy1ZM6iplf7Ppg5rND-WHvJ6L0AE3XXTFb-_bG972EGhLbpU_erOgQ5JOxnY9jv66RzK9sdFgxPftzlbF0vfSUlo-Z=s1360-w1360-h1020-rw",
+            "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nocDFlVo33GQMkZ7RTvIXYzNjo9HyhTklnrArjGKg1sXDhLKY-RpMzMzap1WL8IBZSrzE_PNwoXeFNDnUk606ykeFXMUDY_DV0GyLPA3UD1HM2r3tOAVsHu65Wt6pu414hmr69O=s1360-w1360-h1020-rw",
+
+        ]
+    },
+    {
+        id: 4,
+        title: "Bachelor of Techology",
+        subTitle: "Bundelkhand Institute of Engineering & Technology, Jhansi ( BIET )",
+        duration: "2018-2021",
+        Icon: EngineeringIcon,
+        timeLineColor: "secondary",
+        location: "Jhanshi, Uttar Pradesh",
+        specialization: "Electronics & Communication Engineering",
+        modeOfStudy: "Full Time",
+        skills: "Bootstrap, jQuery, JavaScript, SQL, Python, HTML, CSS",
+        certificates: "Programming for Everybody (Coursera), Python (Basics) (HakerRank)",
+        internshipsOrTraining: "Programming with Python (InternShala)",
+        images: [
+            "https://bietjhs.ac.in/wp-content/uploads/2017/01/banner-5-1300x481.jpg",
+            "https://bietjhs.ac.in/wp-content/uploads/2017/01/slider-1-1300x481.jpg",
+            "https://bietjhs.ac.in/wp-content/uploads/2017/01/slider-3-1300x481.jpg",
+            "https://bietjhs.ac.in/wp-content/uploads/2017/01/slider-2-1300x481.jpg",
+            "https://bietjhs.ac.in/wp-content/uploads/2017/01/slider-4-1300x481.jpg",
+            "https://bietjhs.ac.in/wp-content/uploads/2017/01/slider-5-1300x481.jpg"
+        ]
+    },
+];

@@ -122,6 +122,10 @@
     font-family: var(--body-font);
 }
 
+.MuiTypography-root.MuiTypography-body1.MuiTimelineContent-root.MuiTimelineContent-positionAlternate.css-l73f8l-MuiTypography-root-MuiTimelineContent-root>span:hover {
+    color: var(--title-color-dark)
+}
+
 .MuiTypography-root.MuiTypography-body1.MuiTimelineContent-root.MuiTimelineContent-positionAlternate.css-l73f8l-MuiTypography-root-MuiTimelineContent-root>p {
     font-family: var(--body-font);
 }
@@ -129,8 +133,8 @@
 .MuiTypography-root.MuiTypography-body2.MuiTimelineOppositeContent-root.MuiTimelineOppositeContent-positionAlternate.css-6m14tr-MuiTypography-root-MuiTimelineOppositeContent-root {
     font-family: var(--body-font);
 }
+
 .css-6m14tr-MuiTypography-root-MuiTimelineOppositeContent-root,
-.css-2it631-MuiTypography-root-MuiTimelineOppositeContent-root
-{
+.css-2it631-MuiTypography-root-MuiTimelineOppositeContent-root {
     font-family: var(--body-font);
 }
